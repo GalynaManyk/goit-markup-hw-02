@@ -7,7 +7,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background: #ffffff;
+  background: #f5f4fa;
 }
 /*  основний колір background: #ffffff
  допоміжний background:#2F303A 
@@ -20,10 +20,6 @@ body {
   text-decoration: none;
 }
 /*------- шапка---------*/
-.header-logo :hover,
-.header-logo :focus {
-  color: #2196f3;
-}
 
 .header-logo-span {
   font-weight: 700;
@@ -59,11 +55,6 @@ body {
   color: var(--main-btn);
 }
 
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--main-btn);
-}
-
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -71,12 +62,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
 }
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--main-btn);
+}
 .header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-title-color);
 }
 /*------------герой------------*/
 .hero {
@@ -162,8 +158,12 @@ body {
   color: var(--second-title-color);
 }
 /*-------------------портфоліо--------------*/
-
 .filtr-btn {
+  text-align: center;
+  color: #2196f3;
+}
+
+.filtr-btn-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -171,15 +171,16 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
 
   color: var(--main-title-color);
 }
-.filtr-btn:hover {
-  color: #ffffff;
+.filtr-btn-text:hover {
+  color: var(--second-title-color);
   cursor: pointer;
 }
-.filtr-btn:focus {
-  background-color: #2196f3;
+.filtr-btn-text:focus {
+  background-color: var(--main-btn);
   cursor: pointer;
 }
 
@@ -211,13 +212,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.foter-logo:hover {
   color: var(--main-btn);
-}
-.footer-logo:focus {
-  color: #ffffff;
 }
 
 .footer-logo {
@@ -227,11 +222,7 @@ body {
   font-size: 26px;
   line-height: 1, 19;
   letter-spacing: 0.03em;
-  color: var(--main-btn);
-}
-.footer-logo :hover,
-.footer-logo :focus {
-  color: var(--main-btn);
+  color: var(--main-fon);
 }
 
 .footer-link {
