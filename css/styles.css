@@ -3,6 +3,7 @@
   --second-title-color: #757575;
   --main-fon: #f5f5f5;
   --main-btn: #2196f3;
+  --main-color: #ffffff;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
 }
 .header-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
@@ -85,7 +85,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .hero-btn {
@@ -118,6 +118,7 @@ body {
 }
 
 .features-after-title {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -135,6 +136,9 @@ body {
 }
 /*---------------------команда--------------*/
 .comand {
+  text-align: center;
+}
+.comand-item {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -143,45 +147,41 @@ body {
   color: var(--main-title-color);
 }
 .comand-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1, 16;
-  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 .comand-after-title {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1, 9;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
 /*-------------------портфоліо--------------*/
-.filtr-btn {
+.filtr-item {
   text-align: center;
-  color: #2196f3;
+  background: #f5f4fa;
 }
 
-.filtr-btn-text {
-  font-family: "Roboto";
-  font-style: normal;
+.filtr-btn {
+  font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
-
   color: var(--main-title-color);
 }
-.filtr-btn-text:hover {
-  color: var(--second-title-color);
-  cursor: pointer;
-}
-.filtr-btn-text:focus {
+.filtr-btn:hover,
+.filtr-btn:focus {
+  color: #ffffff;
   background-color: var(--main-btn);
-  cursor: pointer;
 }
 
 .project-title {
@@ -193,6 +193,7 @@ body {
 }
 
 .project-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -217,7 +218,6 @@ body {
 
 .footer-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
@@ -229,7 +229,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .footer-link:hover {
