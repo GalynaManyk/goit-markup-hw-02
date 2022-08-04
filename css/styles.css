@@ -30,7 +30,11 @@ address {
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #f5f4fa;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*  основний колір background: #ffffff
@@ -43,17 +47,19 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f5f5;
 }
 
 /*------- шапка---------*/
 .conteiner {
   width: 1200px;
-  height: auto;
+
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -61,8 +67,6 @@ body {
 
 .header {
   background-color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -70,14 +74,11 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-btn);
-  width: 145px;
-  height: auto;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-left: 215px;
   margin-right: 93px;
 }
 
@@ -99,13 +100,12 @@ body {
 }
 
 .header-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   column-gap: 50px;
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -156,11 +156,8 @@ body {
 
 /*------------герой------------*/
 .hero {
+  padding: 200px 0;
   background-color: #2f303a;
-  align-items: center;
-  display: block;
-  width: auto;
-  height: auto;
 }
 
 .hero-title {
@@ -173,8 +170,6 @@ body {
   color: var(--main-color);
   background: #2f303a;
   max-width: 696px;
-  padding-top: 200px;
-  padding-bottom: 280px;
   margin: 0 auto;
 }
 
@@ -184,7 +179,7 @@ body {
   text-align: center;
   min-width: 216px;
   height: 50px;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .hero-btn:hover,
@@ -205,15 +200,13 @@ body {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
+  margin: 0 auto;
 }
 
 /*------------переваги--------*/
 .features {
   display: flex;
   column-gap: 30px;
-  color: #f5f5f5;
-  padding-top: 94px;
-  padding-bottom: 118px;
 }
 
 .features-list {
@@ -242,7 +235,6 @@ body {
 /*--------------чим ми займаємось------*/
 .about {
   padding-top: 0px;
-  padding-bottom: 94px;
 }
 
 .about-list {
@@ -261,19 +253,10 @@ body {
   text-align: center;
 }
 
-.about-item {
-  padding-bottom: 94px;
-}
-
 /*---------------------команда--------------*/
 
-.comand {
-  display: flex;
-  padding-top: 0px;
-  padding-bottom: 94px;
-}
-
 .comand-list {
+  margin-top: 50px;
   display: flex;
 }
 
@@ -289,9 +272,6 @@ body {
 }
 
 .comand-img {
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 30px;
   max-width: 270px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -318,36 +298,25 @@ body {
 .comand-after-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  margin-bottom: 10px;
   text-align: center;
+}
+.comand {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 /*-------------------портфоліо--------------*/
-.project {
-  padding-top: 94px;
-  padding-bottom: 114px;
-}
 
 /*   ----------filtr-button--portfolio----*/
 
 .filtr-list {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   column-gap: 8px;
-  align-items: center;
-}
-
-.filtr-item {
-  min-height: 73px;
-  min-width: 38px;
-  text-align: center;
-  background: #f5f4fa;
 }
 
 .filtr-btn {
@@ -374,9 +343,24 @@ body {
 }
 
 /*----------progect--portfolio--------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .progect-item {
   width: calc((100%-60px) / 3);
@@ -385,13 +369,16 @@ body {
   margin-right: 0;
 }
 
-/*
-.project-item {width: 380px;
- margin-bottom: 30px; background-color: greenyellow;
+.project {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-
-.project-item:nth-child(3n) {margin-right: 0;}
-.project-item:nth-child(-n+3) {margin-bottom: 0;}*/
 
 .project-title {
   font-weight: 700;
@@ -399,8 +386,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  padding-top: 0;
-  margin-bottom: 4px;
   text-align: center;
 }
 
@@ -417,13 +402,9 @@ body {
 
 /*------------------------підвал----------*/
 .footer {
-  width: auto;
-  height: auto;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .footer .conteiner {
@@ -446,13 +427,11 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-btn);
-  width: 145px;
-  height: auto;
-  padding-top: 60px;
   margin-bottom: 20px;
+  display: block;
 }
 
 .footer-link {
@@ -462,7 +441,6 @@ body {
   color: var(--main-color);
   width: 231px;
   height: auto;
-  margin-bottom: 9px;
 }
 
 .footer-link:hover {
@@ -473,6 +451,14 @@ body {
   color: var(--main-btn);
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-item-mail {
+  margin-bottom: 9px;
+}
+
 .footer-mail {
   font-size: 14px;
   line-height: 1.71;
@@ -480,7 +466,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   width: 231px;
   height: auto;
-  margin-bottom: 9px;
 }
 
 .footer-mail:hover {

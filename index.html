@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header section">
+    <header class="header">
       <div class="conteiner">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo link" lang="en"
@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-btn hero-btn-text">
@@ -66,9 +66,9 @@
           </button>
         </div>
       </section>
-      <section class="features section">
-        <h2 hidden>Наші переваги</h2>
+      <section class="section">
         <div class="conteiner">
+          <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="features list">
             <li class="features-item">
               <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -131,7 +131,7 @@
           </ul>
         </div>
       </section>
-      <section class="comand section">
+      <section class="section">
         <div class="conteiner">
           <h2 class="comand-item">Наша команда</h2>
 
@@ -143,8 +143,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="comand-title">Ігор Дем'яненко</h3>
-              <p lang="en" class="comand-after-title">Product Designer</p>
+              <div class="comand">
+                <h3 class="comand-title">Ігор Дем'яненко</h3>
+                <p lang="en" class="comand-after-title">Product Designer</p>
+              </div>
             </li>
             <li class="comand-img">
               <img
@@ -153,8 +155,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="comand-title">Ольга Рєпіна</h3>
-              <p lang="en" class="comand-after-title">Frontend Developer</p>
+              <div class="comand">
+                <h3 class="comand-title">Ольга Рєпіна</h3>
+                <p lang="en" class="comand-after-title">Frontend Developer</p>
+              </div>
             </li>
             <li class="comand-img">
               <img
@@ -163,8 +167,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="comand-title">Микола Тарасов</h3>
-              <p lang="en" class="comand-after-title">Marketing</p>
+              <div class="comand">
+                <h3 class="comand-title">Микола Тарасов</h3>
+                <p lang="en" class="comand-after-title">Marketing</p>
+              </div>
             </li>
             <li class="comand-img">
               <img
@@ -173,14 +179,16 @@
                 width="270"
                 height="260"
               />
-              <h3 class="comand-title">Михайло Єрмаков</h3>
-              <p lang="en" class="comand-after-title">UI Designer</p>
+              <div class="comand">
+                <h3 class="comand-title">Михайло Єрмаков</h3>
+                <p lang="en" class="comand-after-title">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer">
       <div class="conteiner">
         <a href="./index.html" class="footer-logo link" lang="en"
           >Web<span class="footer-logo-span">Studio</span></a
@@ -201,7 +209,7 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer-iten-tel">
+            <li class="footer-item-tel">
               <a href="tel:+380961111111" class="footer-tel link"
                 >+38 096 111 11 11</a
               >
