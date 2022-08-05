@@ -53,13 +53,11 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f5f5;
 }
 
 /*------- шапка---------*/
 .conteiner {
   width: 1200px;
-
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -122,11 +120,6 @@ img {
   color: var(--main-btn);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--main-btn);
-}
-
 .header-list-info {
   display: flex;
   margin-left: auto;
@@ -140,18 +133,21 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
 }
-
-.header-tel:hover,
-.header-tel:focus {
+.header-mail:hover,
+.header-mail:focus {
   color: var(--main-btn);
 }
 
 .header-tel {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--main-btn);
 }
 
 /*------------герой------------*/
@@ -170,7 +166,9 @@ img {
   color: var(--main-color);
   background: #2f303a;
   max-width: 696px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -255,6 +253,10 @@ img {
 
 /*---------------------команда--------------*/
 
+.team-section {
+  background-color: #f5f4fa;
+}
+
 .comand-list {
   margin-top: 50px;
   display: flex;
@@ -291,7 +293,6 @@ img {
   color: var(--main-title-color);
   margin-bottom: 30px;
   text-align: center;
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -375,9 +376,9 @@ img {
   padding-bottom: 20px;
   padding-right: 24px;
   background: #ffffff;
+  border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .project-title {
@@ -386,7 +387,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  text-align: center;
+  margin-bottom: 4px;
 }
 
 .project-text {
@@ -396,8 +397,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   padding-top: 0px;
-  padding-bottom: 20px;
-  text-align: center;
 }
 
 /*------------------------підвал----------*/
